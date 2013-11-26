@@ -1,16 +1,16 @@
 Acalender::Application.routes.draw do
+  get "doors/show"
+
+  resources :doors
+
   get "doors/index"
 
   get "doors/open"
 
   get "doors/close"
 
-  get "calender/open"
-
-  get "calender/close"
-
   # map '/' to be a redirect to '/calender'
-  root :to => redirect('/doors')
+  root :to => redirect('/doors/index')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,5 +1,6 @@
 class DoorsController < ApplicationController
   def index
+
   end
 
   def open
