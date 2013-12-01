@@ -8,4 +8,4 @@
   %tbody
     - @doors.each do |door|
       %tr
-        %td=image_tag (door.imgsrc)
+        %td=image_tag(door.imgsrc, height: '200', width: '200', alt: "Picture" + door.dateOfDoor.to_s)
