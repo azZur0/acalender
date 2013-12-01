@@ -10,5 +10,5 @@
     - @doors.each do |door|
       - if counter.modulo(3) == 0
         %tr
-      %td=image_tag(door.imgsrc, height: '300', width: '600', alt: "Picture" + door.dateOfDoor.to_s)
+      %td=image_tag(door.imgsrc, height: '300', width: '400', alt: "Picture" + door.dateOfDoor.to_s)
       - counter += 1
