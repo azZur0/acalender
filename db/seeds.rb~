@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-doors = [{:dateOfDoor => 1, :imgsrc => "Bilder_Advent13/pic_1"},
+doors = [{:dateOfDoor => 1, :imgsrc: => "Bilder_Advent13/pic_1"},
     	  {:dateOfDoor => 2, :imgsrc => "Bilder_Advent13/pic_2"},
     	  {:dateOfDoor => 3, :imgsrc => "Bilder_Advent13/pic_3"},
       	  {:dateOfDoor => 4, :imgsrc => "Bilder_Advent13/pic_4"},
