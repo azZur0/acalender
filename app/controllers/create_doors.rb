@@ -1,0 +1,1 @@
+Door.create(date: "1", imgsrc: "Bilder_Advent13/pic_1")

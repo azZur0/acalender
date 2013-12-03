@@ -1,0 +1,5 @@
+class AddDateToDoors < ActiveRecord::Migration
+  def change
+    add_column :doors, :date, :int
+  end
+end
