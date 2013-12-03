@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Door.delete_all
+
 doors = [{:dateOfDoor => 1, :imgsrc => "Bilder_Advent13/pic_1.jpg"},
     	  {:dateOfDoor => 2, :imgsrc => "Bilder_Advent13/pic_2.jpg"},
     	  {:dateOfDoor => 3, :imgsrc => "Bilder_Advent13/pic_3.jpg"},

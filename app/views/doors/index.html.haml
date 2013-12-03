@@ -1,12 +1,11 @@
 -#  This file is app/views/doors/index.html.haml
-%h3 v0.1
-%div This is the first version of my personal advent calender
+%h3 v0.2
+%div My Personal Advent Calender -> Now with autoupdate every day!
 
 %table#doors
   %thead
 
   %tbody
-    =image_tag "img_1.jpg"
     - @doors.each do |door|
       %tr
         %td=image_tag (door.imgsrc)
