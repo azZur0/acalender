@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://startbootstrap.com">Advent Calendar</a>
+      <a class="navbar-brand" href="www.carullo.de">Advent Calendar</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,7 +40,7 @@
         <% array_group.each do |door| %>
 
         <div class="col-md-3 portfolio-item">
-          <a href="portfolio-item.html"><img class="img-responsive" src=<%= door.imgsrc %> height="450" width="750"></a>
+          <a href="portfolio-item.html"><img class="img-responsive" src=<%= door.imgsrc %> height="450" width="750" alt="Picture " <%= door.dateOfDoor.to_s%>></a>
         </div>
 
         <% end %>
