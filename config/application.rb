@@ -59,8 +59,10 @@ module Acalender
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
     config.generators do |g|
-      g.template_engine :haml
+      #g.template_engine :haml
 
       # you can also specify a different test framework or ORM here
       # g.test_framework  :rspec

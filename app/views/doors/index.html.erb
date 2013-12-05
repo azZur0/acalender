@@ -1,0 +1,86 @@
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://startbootstrap.com">Advent Calendar</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">About</a></li>
+        <!--<li><a href="#services">Services</a></li>-->
+        <!--<li><a href="#contact">Contact</a></li>-->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-12">
+      <h1 class="page-header">Advent Calendar v0.9 <small>Pretty version</small></h1>
+    </div>
+
+  </div>
+
+  <%@doors.in_groups_of(4, false).each do |array_group|
+
+  %>
+
+      <div class="row">
+
+        <% array_group.each do |door| %>
+
+        <div class="col-md-3 portfolio-item">
+          <a href="portfolio-item.html"><img class="img-responsive" src=<%= door.imgsrc %> height="450" width="750"></a>
+        </div>
+
+        <% end %>
+
+      </div>
+
+  <% end %>
+
+</div><!-- /.container -->
+
+<div class="container">
+
+  <hr>
+
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; Lukas Carullo 2013</p>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /.container -->
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!---#  This file is app/views/doors/index.html.erb
+      %h3 v0.3
+      %div My Personal Advent Calendar -> Now with auto update every day!
+
+      %table#doors
+        %thead
+
+        %tbody
+          - counter = 0
+          - @doors.each do |door|
+            - if counter.modulo(3) == 0
+              %tr
+            %td=image_tag(door.imgsrc, height: '300', width: '400', alt: "Picture" + door.dateOfDoor.to_s)
+            - counter += 1
+-->
