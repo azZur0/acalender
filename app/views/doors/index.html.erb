@@ -31,17 +31,14 @@
 
   </div>
 
-  <%@doors.in_groups_of(4, false).each do |array_group|
-
-  %>
+  <%@doors.in_groups_of(4, false).each do |array_group| %>
 
       <div class="row">
 
         <% array_group.each do |door| %>
 
         <div class="col-md-3 portfolio-item">
-          <a href="portfolio-item.html"><%= image_tag(door.imgsrc, class: 'img-responsive', height: '450', width: '700', alt: "Picture" + door.dateOfDoor.to_s) %> </a>
-          <!--<img class="img-responsive" src="images<%= #door.imgsrc%>" height="450" width="750" alt="Picture  <%= #door.dateOfDoor.to_s%>"></a>-->
+          <a href="portfolio-item.html"><%= image_tag(door.imgsrc, class: 'img-responsive', height: '450', width: '700', alt: "Picture" + door.dateOfDoor.to_s)%></a>
         </div>
 
         <% end %>
