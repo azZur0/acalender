@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131203172409) do
+ActiveRecord::Schema.define(:version => 20131206095911) do
 
   create_table "doors", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.string   "imgsrc"
     t.integer  "dateOfDoor"
+    t.string   "imgThumbSrc"
   end
 
 end

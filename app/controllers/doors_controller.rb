@@ -5,6 +5,7 @@ class DoorsController < ApplicationController
   end
 
   def open
+
   end
 
   def close
