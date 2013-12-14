@@ -8,6 +8,11 @@ class DoorsController < ApplicationController
 
   end
 
+  def show
+    id = params[:id]
+    @door = Door.find(id) # look up door by unique ID
+  end
+
   def close
   end
 end

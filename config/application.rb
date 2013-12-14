@@ -60,7 +60,7 @@ module Acalender
     config.assets.version = '1.0'
 
     config.generators do |g|
-      #g.template_engine :haml
+      g.template_engine :erb
 
       # you can also specify a different test framework or ORM here
       # g.test_framework  :rspec

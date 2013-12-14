@@ -1,11 +1,7 @@
 Acalender::Application.routes.draw do
-
-  # map '/' to be a redirect to '/calender'
-  root to: 'doors#index'
-  root :to => redirect('/doors')
-  root :to => redirect('/doors/index')
-
   resources :doors
+  # map '/' to be a redirect to '/calender'
+  root :to => redirect('/doors')
 
   #get "doors/show"
   #get "doors/index"
